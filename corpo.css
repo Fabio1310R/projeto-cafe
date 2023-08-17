@@ -3,7 +3,9 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    overflow-y: hidden;
 } 
+
 @keyframes a1{
     0% {margin-left: 150vw;}
     25%{margin-left: 100vw;}
@@ -35,7 +37,7 @@
 }
 
 .a2{
-    
+    position: absolute;
     animation-name: a2;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -90,51 +92,37 @@
     @keyframes a1{
         0% {margin-left: 150vw;
             width: 150px;}
-        100%{margin-left: 25vw;
+        50%{margin-left: 25vw;
             width: 150px;}
+        100%{margin-left: -150vw;}
       
     
     }
     
     @keyframes a2 {
-        0% {margin-left: 200vw;}
-        50%{margin-left: 150vw;}
-        100%{margin-left: 25vw;}
-    
-    }
-    
-    @keyframes a3 {
-        0% {margin-left: 250vw;}
-        50%{margin-left: 200vw;}
-        75%{margin-left: 150vw;}
-        100%{margin-left: 25vw;}
-    
+        0% {margin-left: 150vw;
+            width: 150px;}
+        50%{margin-left: 25vw;
+            width: 150px;}
+        100%{margin-left: -150vw;}
     }
     
     .a1 {
-        
         animation-name: a1;
-        animation-duration: 5s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
-        animation-delay: 5s;
-        
     }
     
     .a2 {
         
         animation-name: a2;
-        animation-duration: 6s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
-       
+        animation-delay: 3s;
     }
    
-    .a3{
-       
-        animation-name: a3;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        
-        
+    .a3{  
+     display: none;
     }
 
 
